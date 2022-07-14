@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css';
+import './sass/projects.scss';
 import { Link } from 'react-router-dom';
 
 class Projects extends React.Component {

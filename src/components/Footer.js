@@ -1,7 +1,12 @@
 import React from 'react';
-import '../index.css';
+import './sass/footer.scss';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 class Footer extends React.Component {
   constructor() {
@@ -15,10 +20,16 @@ class Footer extends React.Component {
           Jhonny Doe<br/>
           jhonnydoe5468@mypc.com
         </address>
-        <ul className='row col'>
-          <li className='col'><a href="/">Github</a></li>
-          <li className='col'><a href="/food">Linkedin</a></li>
-        </ul>
+        <div className='wrapper-social'>
+          <div className='icon github'>
+            <div className='tooltip'>Github</div>
+            <span><FontAwesomeIcon icon="fa-brands fa-github" /></span>
+          </div>
+          <div className='icon linkedin'>
+            <div className='tooltip'>Linkedin</div>
+            <span><FontAwesomeIcon icon="fa-brands fa-linkedin-in" /></span>
+          </div>
+        </div>
       </footer>
     );
   }
