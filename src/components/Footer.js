@@ -15,19 +15,19 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className='row'>
-        <address className='col'>
-          Jhonny Doe<br/>
-          jhonnydoe5468@mypc.com
+      <footer>
+        <address className='col-personal-description'>
+          <p className='footer-name'>Manuel Borrego Reina</p>
+          <p className='footer-profession'>PHP Backend developer</p>
         </address>
         <div className='wrapper-social'>
           <div className='icon github'>
             <div className='tooltip'>Github</div>
-            <span><FontAwesomeIcon icon="fa-brands fa-github" /></span>
+            <span><a href="https://github.com/maboresev" target="_blank" id="footer-github"><FontAwesomeIcon icon="fa-brands fa-github" /></a></span>
           </div>
           <div className='icon linkedin'>
             <div className='tooltip'>Linkedin</div>
-            <span><FontAwesomeIcon icon="fa-brands fa-linkedin-in" /></span>
+            <span><a href="https://www.linkedin.com/in/manuel-borrego-reina/" target="_blank" id="footer-linkedin"><FontAwesomeIcon icon="fa-brands fa-linkedin-in" /></a></span>
           </div>
         </div>
       </footer>

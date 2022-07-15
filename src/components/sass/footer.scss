@@ -1,13 +1,24 @@
 footer {
-    display: grid;
+    display: flex;
     height: 100%;
-    width: 15%;
+    width: 100%;
     place-items: center;
     background: #fff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    background-color: aqua;
+}
+
+.col-personal-description {
+    flex: 50%;
+    margin-bottom: 0;
 }
 
 .wrapper-social {
+    flex: 50%;
     display: inline-flex;
+    justify-content: center;
     .icon {
         margin: 0 20px;
         text-align: center;
@@ -30,9 +41,14 @@ footer {
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
             transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             color: #fff;
-            i {
-                line-height: 60px;
-                font-size: 25px;
+            a {
+                color:#fff;
+                svg {
+                    line-height: 60px;
+                    font-size: 25px;
+                    top: 25%;
+                    position: relative;
+                }
             }
         }
 
